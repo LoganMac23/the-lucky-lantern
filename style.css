@@ -18,7 +18,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 260px;
+    padding-top: 265px;
     gap: 25px;
 }
 
@@ -43,7 +43,7 @@ body {
     color: #FEEBB7;
     width: 510px;
     text-align: center;
-    line-height: 30px;
+    line-height: 25px;
     margin-top: 60px;
 }
 
