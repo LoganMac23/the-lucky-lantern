@@ -70,6 +70,7 @@ body {
     gap: 10%;
     width: 10%;
     height: 45%;
+    list-style: none;
 }
 
 .box {
@@ -86,6 +87,16 @@ body {
     font-size: 1.8vw;
     text-align: center;
 }
+
+.box:hover {
+    background-color: #A20001;
+}
+
+a {
+    color: #FEEBB7;
+    text-decoration: none;
+}
+
 
 .footer {
     display: flex;
@@ -148,10 +159,6 @@ body {
     height: 50%;
     gap: 2vw;
     width: 17vw;
-}
-
-.hoursHeader {
-    
 }
 
 .hours {
@@ -226,6 +233,13 @@ h6 {
     font-size: 1.5vw;
 }
 
+.h7 {
+    font-family: "Supermercado One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4vw;
+}
+
 img {
    width: auto;
    height: auto;
@@ -240,3 +254,120 @@ img {
     max-height: 6vw;
 }
 
+
+/* Secondary Pages */
+
+.banner {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background-image: url(assets/background_banner.jpg);
+    background-size: contain;
+    background-position: center;
+    background-color: transparent;
+    background-repeat: no-repeat; 
+    display: flex;
+    flex-direction: row;
+    aspect-ratio: 427/76;
+    justify-content: space-between;
+}
+
+
+
+.bannerLogo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 70vw;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 1vw;
+    position: absolute;
+}
+
+.bLogoText {
+    align-content: flex-start;
+    justify-content: center;
+    color: #FEEBB7;
+    width: 30%;
+    height: 60%;
+    text-align: center;
+    line-height: 0.05vw;
+    padding-top: 0.8vw;
+}
+
+.heading {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    color: #FEEBB7;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30vw;
+}
+
+.navBox {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    padding-top: 1vw;
+    
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #CC0809;
+    height: 3vw;
+    width: 30vw;
+    gap: 2vw;
+    border-radius: 0.8vw 0vw 0vw 0.8vw;
+    align-items: center;
+    justify-content: center;
+    color: #FEEBB7;
+    font-family: el-messiri, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.2vw;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+}
+
+.navElem {
+    
+}
+
+.navElem:hover {
+    text-decoration: underline;
+    text-decoration-color: #FEEBB7;
+}
+
+.active {
+    text-decoration: underline;
+    text-decoration-color: #FEEBB7;
+
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #FFF8E4;
+    width: 100%;
+    height: auto;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+
+}
+
+.sideNav {
+    background-color: #FEEBB7;
+    border-radius: 2vw;
+    width: 15vw;
+}
