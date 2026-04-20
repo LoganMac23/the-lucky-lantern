@@ -359,15 +359,113 @@ nav {
     background-color: #FFF8E4;
     width: 100%;
     height: auto;
-    padding-top: 2vw;
+    padding-top: 1vw;
     padding-bottom: 2vw;
-    padding-left: 1vw;
-    padding-right: 1vw;
-
+    padding-left: 2vw;
+    justify-content: flex-start;
+    color: #CC0809;
 }
 
 .sideNav {
     background-color: #FEEBB7;
     border-radius: 2vw;
     width: 15vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    align-self: flex-start;
+    z-index: 1;
+    top: 10vw;
+    left: 1.5vw;
+    padding-left: 1.5vw;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+    gap: 2vw;
+}
+
+.sideNav a {
+    text-decoration: none;
+    color: #CC0809;
+    display: block;
+    font-family: "Supermercado One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.8vw;
+}
+
+.sideNav a:hover {
+    color: #A20001;
+    text-decoration: underline;
+    text-decoration-color: #A20001;
+}
+
+.menuContainer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20vw;
+    margin-left: -10vw;
+    
+}
+
+.itemContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60vw;
+    padding-bottom: 2vw;
+    gap: 1vw;
+}
+
+.menuHeader {
+    color: #CC0809;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3vw;
+    padding-right: 8vw;
+    padding-bottom: 2vw;
+}
+
+.itemName {
+    font-family: el-messiri, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.5vw;
+    color: black;
+    
+}
+
+.itemDescription {
+    font-family: el-messiri, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1vw;
+    color: black;
+    text-align: center;
+    line-height: 2vw;
+    width: 18vw;
+}
+
+.aboutInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: el-messiri, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1vw;
+    color: black;
+    padding-top: 6vw;
+    margin-left: -5vw;
+    width: 30vw;
+    line-height: 1.6vw;
+}
+
+.aboutInfoText {
+    
 }
