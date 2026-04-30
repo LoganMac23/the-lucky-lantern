@@ -22,6 +22,12 @@ body {
     background-repeat: no-repeat;
 }
 
+@media (max-width: 750px) {
+    .background {
+        background-image: url(assets/city_background_mobile.jpg);
+    }
+}
+
 .container {
     display: flex;
     align-items: center;
@@ -50,6 +56,7 @@ body {
     justify-content: center;
 }
 
+
 .textContainer {
     align-content: center;
     justify-content: center;
@@ -57,8 +64,41 @@ body {
     width: 26%;
     height: 60%;
     text-align: center;
-    line-height: 1vw;
+    line-height: 3vw;
     padding-top: 3vw;
+    
+}
+
+@media (max-width: 750px){
+    .textContainer {
+        width: 24%;
+    }
+}
+
+.logoText1 {
+   font-family: "Supermercado One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3vw; 
+}
+
+@media (max-width: 750px){
+    .logoText1 {
+        font-size: 2.8vw;
+    }
+}
+
+.logoText2{
+    font-family: el-messiri, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.8vw;
+}
+
+@media (max-width: 750px){
+    .logoText2 {
+        font-size: 1.7vw;
+    }
 }
 
 .buttonContainer {
@@ -111,6 +151,15 @@ a {
     padding-right: 8vw;
 }
 
+@media (max-width: 750px){
+    .footer {
+        flex-direction: column;
+        height: auto;
+        justify-content: flex-start;
+        gap: 1vw;
+    }
+}
+
 .fLeftBox {
     display: flex;
     flex-wrap: wrap;
@@ -118,6 +167,13 @@ a {
     align-content: flex-start;
     height: 100%;
     width: 25vw;
+}
+
+@media (max-width: 750px){
+    .fLeftBox {
+        align-content: flex-start;
+        padding-left: 4.5vw;
+    }
 }
 
 .footerLogo {
@@ -137,14 +193,39 @@ a {
     width: 30%;
     height: 60%;
     text-align: center;
-    line-height: 0.2vw;
+    line-height: 2.5vw;
     padding-top: 2vw;
+}
+
+.fLogoText1 {
+    font-family: "Supermercado One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5vw;
+}
+
+.fLogoText2 {
+    font-family: el-messiri, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2vw;
 }
 
 .contact {
     justify-content: center;
     color: #FEEBB7;
     padding-top: 2vw;
+    font-family: el-messiri, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.9vw; 
+}
+
+@media (max-width: 750px) {
+    .contact {
+        text-align: center;
+        padding-left: 8vw;
+    }
 }
 
 .fMidBox {
@@ -166,15 +247,48 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 17vw;
+    width: 25vw;
     height: 10vw;
     line-height: 2vw;
     float: left;
+    align-items: center;
+    font-family: el-messiri, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.9vw; 
+} 
+
+@media (max-width:750px) {
+    .hours {
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        padding-left: 8vw;
+    }
+}
+
+.hoursHeader {
+   font-family: "Supermercado One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5vw; 
+}
+
+@media (max-width:750px) {
+    .hoursHeader {
+        display: flex;
+        justify-content: center;
+        width: 25vw;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 .days {
     width: 8vw;
 }
+
+
 
 .times {
     width: 8vw;
@@ -272,6 +386,14 @@ img {
     justify-content: space-between;
 }
 
+/* @media (max-width: 750px) {
+    .banner {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+} */
+
 
 
 .bannerLogo {
@@ -286,6 +408,15 @@ img {
     position: absolute;
 }
 
+/* @media (max-width: 750px) {
+    .bannerLogo {
+        justify-content: center;
+        align-items: center;
+        
+    }
+} */
+
+
 .bLogoText {
     align-content: flex-start;
     justify-content: center;
@@ -293,8 +424,21 @@ img {
     width: 30%;
     height: 60%;
     text-align: center;
-    line-height: 0.05vw;
     padding-top: 0.8vw;
+}
+
+.bLogoText1 {
+    font-family: "Supermercado One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5vw;
+}
+
+.bLogoText2 {
+     font-family: el-messiri, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2vw;
 }
 
 .heading {
@@ -366,6 +510,12 @@ nav {
     color: #CC0809;
 }
 
+@media (max-width: 750px) {
+    .contentContainer {
+        flex-direction: column;
+    }
+}
+
 .sideNav {
     background-color: #FEEBB7;
     border-radius: 2vw;
@@ -382,6 +532,16 @@ nav {
     padding-top: 1.5vw;
     padding-bottom: 1.5vw;
     gap: 2vw;
+}
+
+@media (max-width: 750px) {
+    .sideNav {
+        flex-direction: row;
+        width: auto;
+        padding-right: 2vw;
+        align-self: center;
+        top: 2vw;
+    }
 }
 
 .sideNav a {
@@ -408,6 +568,12 @@ nav {
     
 }
 
+@media (max-width: 750px) {
+    .menuContainer {
+        align-content: center;
+    }
+}
+
 .itemContainer {
     display: flex;
     flex-direction: row;
@@ -417,8 +583,24 @@ nav {
     gap: 1vw;
 }
 
+@media (max-width: 750px) {
+    .itemContainer {
+        flex-direction: column;
+        align-self: center;
+        margin-left: -8vw;
+    }
+}
+
 .menuHeader {
     color: #CC0809;
+}
+
+@media (max-width: 750px) {
+    .menuHeader {
+        text-align: center;
+        align-self: center;
+        margin-left: -13vw;
+    }
 }
 
 .item {
@@ -468,4 +650,116 @@ nav {
 
 .aboutInfoText {
     
+}
+
+
+
+.reserveButtonBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF8E4;
+    height: 40vw;
+    gap: 2.5vw;
+}
+
+.reserveButton {
+    display: flex;
+    flex-direction: row;
+    background-color: #CC0809;
+    color: #FEEBB7;
+    border-radius: 1vw;
+    font-family: el-messiri, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5vw;
+    text-align: center;
+    height: 3.5vw;
+    width: 12vw;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.reserveButton:hover {
+    background-color: #A20001; 
+}
+
+.availabilityButton {
+    background-color: #CC0809;
+    color: #FEEBB7;
+    border-radius: 1vw;
+    font-family: el-messiri, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5vw;
+    text-align: center;
+    height: 5vw;
+    width: 18vw;
+    align-content: center;
+    margin-top: 1.5vw;
+}
+
+.availabilityButton:hover {
+    background-color: #A20001;
+}
+
+.iconContainer {
+    align-content: center;
+    justify-content: center;
+}
+
+.icons {
+    max-width: 2.2vw;
+}
+
+
+.orderItemContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60vw;
+    padding-bottom: 2vw;
+    gap: 3vw;
+}
+
+.orderItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    background-color: #FEEBB7;
+    border-radius: 1vw;
+    width: 26vw;
+}
+
+/* .itemName {
+    font-family: el-messiri, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.5vw;
+    color: black;
+    
+} */
+
+.orderItemDescription {
+    font-family: el-messiri, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1vw;
+    color: black;
+    text-align: left;
+    line-height: 2vw;
+    width: 18vw;
+}
+
+.order {
+    max-width: 10vw;
 }
